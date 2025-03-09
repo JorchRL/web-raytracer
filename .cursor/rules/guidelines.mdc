@@ -1,0 +1,34 @@
+---
+description: when writing code
+globs: 
+alwaysApply: false
+---
+# .cursorrules
+
+## General Code Guidelines:
+- Use pure functions where applicable.
+- Maintain clear separation of concerns (UI, Scene Logic, GPU operations).
+- Encapsulate module behavior to facilitate unit testing.
+- Prefer immutable data structures and avoid global state.
+- Document all functions using JSDoc style comments.
+- Favor small, focused functions with a single responsibility.
+- Ensure modules expose only minimal interfaces necessary for their tasks.
+- Follow TDD practices: write tests first and let tests drive the design.
+- Optimize for clarity and maintainability over micro-performance.
+
+## Testing Guidelines:
+- Use vitest as the unit testing framework.
+- Write tests before production code (TDD approach).
+- Structure tests to cover core functions such as GPU initialization, math routines, pipeline setup, and rendering logic.
+- Create test scripts (in package.json) that output only critical failure summaries to keep context minimal.
+
+## Project Structure:
+- Keep the project self-contained on the client side, using plain JavaScript and native WebGPU APIs.
+- Minimize dependencies and avoid external libraries unless absolutely necessary.
+- Organize code into modules (GPU Initialization, Pipeline Setup, Scene & Camera Management, Rendering) for clarity and testability.
+
+## Documentation and Code Style:
+- Write clear and descriptive names for variables and functions.
+- Use consistent coding conventions and formatting.
+- Write JSDoc comments for all functions to describe inputs, outputs, and contracts.
+- Follow standard JavaScript best practices and maintain code readability. 

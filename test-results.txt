@@ -1,0 +1,11 @@
+
+ RUN  v1.6.1 /Users/jorge/projects/web-projects/web-raytracer
+
+ ✓ tests/gpu.test.js  (6 tests) 4ms
+ ✓ tests/renderer.test.js  (7 tests) 5ms
+
+ Test Files  2 passed (2)
+      Tests  13 passed (13)
+   Start at  14:46:43
+   Duration  358ms (transform 26ms, setup 0ms, collect 33ms, tests 9ms, environment 381ms, prepare 85ms)
+

@@ -1,0 +1,6 @@
+---
+description: before starting to write code
+globs: 
+alwaysApply: false
+---
+Always look up the implementation_plan.md file to get a grasp of where and when in the overall project you are working on. 

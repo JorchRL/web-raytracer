@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebGPU Interactive Raytracer</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    #controls {
+      margin-bottom: 20px;
+    }
+    button {
+      margin: 0 10px;
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+    canvas {
+      border: 1px solid #ccc;
+    }
+    #status {
+      margin-top: 20px;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <div id="controls">
+    <button id="previewButton">Preview (Rasterization)</button>
+    <button id="raytraceButton">Render with Raytracer</button>
+  </div>
+  <canvas id="canvas" width="800" height="600"></canvas>
+  <div id="status">Status: Ready</div>
+  
+  <!-- Load as module to support ES6 imports -->
+  <script type="module" src="main.js"></script>
+</body>
+</html>
